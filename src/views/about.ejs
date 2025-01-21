@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%-
+    include('./partials/_head', {
+      title: 'Mr. Dice - About',
+      head: null
+    })
+  %>
+  <body class="bg-black text-white"> 
+    <%- include('./partials/_header') %>
+
+    <main>
+
+      <section id="hero">
+        <div class="section">
+          <div data-aos="fade-up" class="flex flex-col items-center justify-center gap-4">
+            <h1 class="text-balance title uppercase text-center text-5xl md:text-6xl">About</h1>
+            <div class="w-[30%] h-[2px] bg-white"></div>
+          </div>
+
+          <div data-aos="fade-up" data-aos-delay="100" class="mt-16 text-left">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae adipisci dicta corrupti tempora temporibus ullam quibusdam omnis, commodi molestias, iste dolorum, culpa aperiam! Perferendis consequatur tempore excepturi ducimus a magni?
+            </p>
+            <br />
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit sint, minima soluta sit excepturi perspiciatis sequi reprehenderit deleniti officiis, consectetur, enim aliquam recusandae. Soluta, obcaecati velit quisquam hic rem beatae.
+              Numquam rerum, aut voluptatem omnis sunt quidem eum illo ipsam perferendis non rem aspernatur, animi obcaecati at repellat nobis repellendus neque earum, possimus dolorum enim excepturi error! Sequi, culpa repellendus!
+              Illum dignissimos consectetur ut quidem doloribus itaque aperiam soluta nemo eligendi debitis architecto repellat corporis autem, totam blanditiis rerum facere eveniet. Est quas nulla maxime consequuntur nemo iusto vel consequatur.
+            </p>
+            <br />
+            <p>
+              Doloremque porro pariatur voluptatem, possimus dolorum ipsam maxime ad earum asperiores? Ducimus, vitae. Sapiente velit consectetur nihil quod delectus aspernatur dicta laudantium! Adipisci sapiente ipsam debitis fugiat nostrum tempora nesciunt.
+              Quae, in quod officiis aspernatur explicabo eveniet exercitationem culpa minus dignissimos aut nostrum repudiandae aliquid repellendus officia aperiam eius iure delectus nulla, quibusdam adipisci facilis cum odio illo voluptatibus! Quis?
+            </p>
+          </div>
+        </div>
+      </section>
+
+
+      <%- include('./partials/_footer', { socials: locals.socials }) %>
+    </main>
+    <%- include("./partials/_scripts") %>
+  </body>
+</html>

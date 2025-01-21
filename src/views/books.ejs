@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%-
+    include('./partials/_head', {
+      title: 'Mr. Dice - Books',
+      head: null
+    })
+  %>
+  <body class="bg-black text-white"> 
+    <%- include('./partials/_header') %>
+
+    <main>
+
+      <section id="hero">
+        <div class="section">
+          <div data-aos="fade-up" class="flex flex-col items-center justify-center gap-4">
+            <h1 class="text-balance title uppercase text-center text-5xl md:text-6xl">Books</h1>
+            <div class="w-[30%] h-[2px] bg-white"></div>
+          </div>
+
+          <div class="mt-16">
+            <div data-aos="fade-down" class="mb-16">
+              <div class="w-full relative">
+                <input
+                  type="search"
+                  name="search"
+                  id="search"
+                  placeholder="Search books"
+                  class="bg-highlight w-full text-lg p-4 rounded-lg outline-none
+                  focus-within:ring-2 md:focus-within:ring-4 ring-white pr-12 md:pr-40"
+                >
+                <button
+                  type="submit"
+                  class="absolute top-1/2 right-2 -translate-y-1/2 md:bg-white rounded-lg
+                  md:text-black p-2.5 md:w-32 text-lg flex items-center justify-center gap-2"
+                >
+                  <span class="hidden md:inline">Search</span>
+                  <span class="pi pi-search"></span>
+                </button>
+              </div>
+              
+            </div>
+
+            <div class="w-full grid gap-5 grid-cols-[repeat(auto-fill,minmax(280px,1fr))]">
+              <div data-aos="fade-up" class="rounded-xl bg-highlight p-4 grid gap-3">
+                <div class="h-60 w-full overflow-hidden rounded-xl">
+                  <img src="/images/book-cover.png" alt="Book Cover" class="w-full h-full object-cover">
+                </div>
+                
+                <div>
+                  <h1 class="leading-0 title uppercase text-center text-4xl">Morals of Excellence</h1>
+                </div>
+
+                <p class="text-sm text-ellipsis line-clamp-3">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta cupiditate facere in ipsum dolor molestias quaerat ad dolorem aut illo est, delectus sequi inventore repudiandae praesentium recusandae excepturi pariatur quidem?
+                </p>
+                <a href="/books/morals-of-excellence" class="w-full">
+                  <button class="mt-2 btn primary rounded-lg w-full">Read More</button>
+                </a>
+              </div>
+
+              <div data-aos="fade-up" data-aos-delay="100" class="rounded-xl bg-highlight p-4 grid gap-3">
+                <div class="h-60 w-full overflow-hidden rounded-xl">
+                  <img src="/images/book-cover.png" alt="Book Cover" class="w-full h-full object-cover">
+                </div>
+                
+                <div>
+                  <h1 class="leading-0 title uppercase text-center text-4xl">Morals of Excellence</h1>
+                </div>
+
+                <p class="text-sm text-ellipsis line-clamp-3">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta cupiditate facere in ipsum dolor molestias quaerat ad dolorem aut illo est, delectus sequi inventore repudiandae praesentium recusandae excepturi pariatur quidem?
+                </p>
+
+                <button class="mt-2 btn primary rounded-lg">Read More</button>
+              </div>
+
+              <div data-aos="fade-up" data-aos-delay="200" class="rounded-xl bg-highlight p-4 grid gap-3">
+                <div class="h-60 w-full overflow-hidden rounded-xl">
+                  <img src="/images/book-cover.png" alt="Book Cover" class="w-full h-full object-cover">
+                </div>
+                
+                <div>
+                  <h1 class="leading-0 title uppercase text-center text-4xl">Morals of Excellence</h1>
+                </div>
+
+                <p class="text-sm text-ellipsis line-clamp-3">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta cupiditate facere in ipsum dolor molestias quaerat ad dolorem aut illo est, delectus sequi inventore repudiandae praesentium recusandae excepturi pariatur quidem?
+                </p>
+
+                <button class="mt-2 btn primary rounded-lg">Read More</button>
+              </div>
+
+              <div data-aos="fade-up" data-aos-delay="300" class="rounded-xl bg-highlight p-4 grid gap-3">
+                <div class="h-60 w-full overflow-hidden rounded-xl">
+                  <img src="/images/book-cover.png" alt="Book Cover" class="w-full h-full object-cover">
+                </div>
+                
+                <div>
+                  <h1 class="leading-0 title uppercase text-center text-4xl">Morals of Excellence</h1>
+                </div>
+
+                <p class="text-sm text-ellipsis line-clamp-3">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta cupiditate facere in ipsum dolor molestias quaerat ad dolorem aut illo est, delectus sequi inventore repudiandae praesentium recusandae excepturi pariatur quidem?
+                </p>
+
+                <button class="mt-2 btn primary rounded-lg">Read More</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <%- include('./partials/_footer', { socials: locals.socials }) %>
+    </main>
+    <%- include("./partials/_scripts") %>
+  </body>
+</html>

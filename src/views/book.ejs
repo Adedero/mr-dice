@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%-
+    include('./partials/_head', {
+      title: 'Mr. Dice - Books',
+      head: null
+    })
+  %>
+  <body class="bg-black text-white"> 
+    <%- include('./partials/_header') %>
+
+    <main>
+
+      <section id="hero">
+        <div class="section">
+          <div data-aos="fade-up" class="flex flex-col items-center justify-center gap-4">
+            <h1 class="text-balance title uppercase text-center text-5xl md:text-6xl">Morals of Excellence</h1>
+            <div class="w-[30%] h-[2px] bg-white"></div>
+            <p class="text-2xl text-center title uppercase">
+              Book subtitle
+            </p>
+          </div>
+
+          <div class="mt-16">
+            <div class="w-full grid gap-5 grid-cols-[repeat(auto-fill,minmax(280px,1fr))]">
+              
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <%- include('./partials/_footer', { socials: locals.socials }) %>
+    </main>
+    <%- include("./partials/_scripts") %>
+  </body>
+</html>

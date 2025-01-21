@@ -3,8 +3,22 @@
     <%- include('./icons/logo', { height: '22', fill: 'white' }) %>
   </a>
 
-  <div>
-    <button>
+  <div id="nav" class="relative w-dvw opacity-0 h-0 overflow-hidden transition-all md:opacity-100 md:w-auto md:h-auto md:flex items-center">
+    <div class="md:hidden absolute top-4 right-4">
+      <button id="close-btn">
+        <span class="material-symbols-rounded" style="font-size: 2rem;">close</span>
+      </button>
+    </div>
+
+    <a data-nav href="/">Home</a>
+    <a data-nav href="/about">About</a>
+    <a data-nav href="/books">Books</a>
+    <a data-nav href="/events">Events</a>
+    <a data-nav href="/contact">Contact</a>
+  </div>
+
+  <div class="md:hidden">
+    <button id="menu-btn">
       <span class="material-symbols-rounded" style="font-size: 2rem;">menu</span>
     </button>
   </div>
