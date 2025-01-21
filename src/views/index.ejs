@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%-
+    include('./partials/_head', {
+      title: 'Mr. Dice - Home',
+      head: null
+    })
+  %>
+  <body class="bg-black text-white"> 
+    <%- /* include('./partials/_loader') */ %>
+    <%- include('./partials/_header') %>
+    <main class="grid">
+      <section id="hero" class="md:h-[calc(100dvh-4.5rem)]">
+        <%- include('./partials/home/_hero', { socials: locals.socials }) %>
+      </section>
+      
+      <section id="featured-works" class="bg-black z-30">
+        <%- include('./partials/home/_featured-work') %>
+      </section>
+
+      <section id="featured events" class="bg-black z-30">
+        <%- include('./partials/home/_featured-events') %>
+      </section>
+    </main>
+    <%- include("./partials/_scripts") %>
+  </body>
+</html>

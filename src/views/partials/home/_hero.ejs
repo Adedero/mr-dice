@@ -1,0 +1,32 @@
+<div class="relative w-dvh overflow-x-hidden h-full md:flex items-center justify-center px-4 md:px-12 lg:px-24">
+  
+  <div class="w-full md:order-2 md:w-1/2 lg:w-[26rem] relative">
+    <div class="h-80 md:h-[95dvh] md:fixed md:z-10 md:bottom-0 md:right-12 lg:right-[18%] xl:right-[22%] overflow-y-hidden">
+      <img data-aos="fade-up" src="/images/man-in-suit.png" class="h-full w-full object-cover object-top md:object-center md:object-cover" />
+      <div class="z-[1] md:hidden absolute bg-black blur-[10px] md:blur-md -bottom-[1.2rem] md:-bottom-5 w-full left-0 h-10"></div>
+
+      <div data-aos="fade-up" data-aos-delay="100" class="hidden md:block z-50 absolute right-0 top-1/2 -translate-y-1/2">
+        <%- include('../_social-medial-links', { flexDirection: 'flex-col', socials: locals.socials }) %>
+      </div>
+    </div>
+  </div>
+
+  <div class="w-full text-center md:text-left md:order-1 mt-8 md:mt-0 flex-shrink-0 md:w-1/2 lg:w-[26rem]">
+    <p data-aos="fade-right" data-aos-delay="100" class="text-lg font-semibold">Ikenna Okoroafor</p>
+    <h1 data-aos="fade-right" data-aos-delay="200" class="title text-[7rem] md:text-[8rem] leading-none">MR. DICE</h1>
+    <div data-aos="fade-right" data-aos-delay="200" class="md:hidden my-2">
+      <%- include('../_social-medial-links', { socials: locals.socials }) %>
+    </div>
+    <p data-aos="fade-right" data-aos-delay="300" class="text-sm text-balance">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Qui sed perferendis maxime aperiam nobis provident molestias
+      voluptatibus aut error, repellendus sapiente a impedit soluta
+      repudiandae itaque labore architecto doloribus aliquam?
+    </p>
+    <button data-aos="fade-right" data-aos-delay="400" class="mt-5 btn primary w-48">More</button>
+    <p data-aos="fade-right" data-aos-delay="500" class="mt-4 bastliga text-[3.5rem] md:text-[5rem] font-thin">Ikenna Okoroafor</p>
+  </div>
+
+  
+  
+</div>
