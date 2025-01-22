@@ -1,11 +1,19 @@
+const socials = require('../data/social-media-links')
+const env = require('../utils/env')
+const axios = require('axios')
+ 
+
 const { Router } = require('express')
 
 const router = Router()
 
-const socials = require('../data/social-media-links')
+const API = env.get('API')
+
 
 const routes = () => {
-  router.get('/', (req, res) => {
+  router.get('/', async (req, res) => {
+   //const { data } = await axios.get(`${API}/home-page`)
+    //  console.log(data)
     res.render('index', {
       socials
     })
@@ -39,6 +47,15 @@ const routes = () => {
     res.render('contact', {
       socials
     })
+  })
+
+  router.get('/admin', (req, res) => {
+    const adminUrl = env.get('ADMIN_URL')
+    if (adminUrl) {
+      res.redirect(adminUrl)
+      return
+    }
+    res.render('not-found')
   })
 
   return router
